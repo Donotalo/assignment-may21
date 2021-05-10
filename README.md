@@ -1,6 +1,6 @@
 # assignment-may21
 ## Disclaimer
-I've decades of exerience in C & C++, have 10 months worth of experience in Node.js. My experience in Node is writing a server using ExpressJS. This assignment is different. For this assignment I have to learn how to write a __CLI application in Node__, how to write __C++ addon for Node__ and how __Node-API works__ at the basic level. So I went through a lot of tutorials and how to guides. Finally I was able to make everything working, by modifying a hello world project for Node-API, but due to lack of experience in this area and due to the time limitation I feel like the assignment isn't professional.
+I've decades of exerience in C & C++, have 10 months worth of experience in Node.js. My experience in Node is writing a server using ExpressJS. This assignment is different. For this assignment I have to learn how to write a __CLI application in Node__, how to write __C++ addon for Node__ and how __Node-API works__ at the basic level. So I went through a lot of tutorials and how to guides. Finally I was able to make everything working, by modifying a hello world project for Node-API, but due to lack of experience in this area and due to the time limitation I feel like the submission isn't professional.
 
 I've spent 5-6 hours for going through tutorial and ~5 hours for coding. The assignment is done on Windows 10 in Node.js v16.1.0.
 
