@@ -23,7 +23,7 @@ The file `hei_connect_interface.js` implements a class `HeiConnectInterface` whi
 
 The `hei_connect` folder contains the C++ addon to communicate with Hei Connect. The main code and entry point is at `./src/hei_connect.cc`. It has a `HeiConnectDevice` class that directly communicates with the hardware. It has a constructor to default initialize member variables, `GetStirrerSpeed()` to retrieve the stirrer speed and `SetStirrerSpeed()` to set the stirrer speed.
 
-The entry point of the C++ addon is the `Init()` in `./src/hei_connect.cc` file. It calls the `Method()` function. This functions contains a static variable of type `HeiConnectDevice`. All communication with the Hei Connect device occur via this variable. `Method()` function checks the parameters come from Node environment (get-speed/set-speed) and calls appropriate C++ implementation (HeiConnectDevice::GetStirrerSpeed/HeiConnectDevice::SetStirrerSpeed).
+The entry point of the C++ addon is the `Init()` in `./src/hei_connect.cc` file. It calls the `Method()` function. This function contains a static variable of type `HeiConnectDevice`. All communication with the Hei Connect device occur via this variable. `Method()` function checks the parameters come from Node environment (get-speed/set-speed) and calls appropriate C++ implementation (HeiConnectDevice::GetStirrerSpeed/HeiConnectDevice::SetStirrerSpeed).
 
 ## Sample run
     PS E:\Documents\Programs\labforward> node . hc --help
