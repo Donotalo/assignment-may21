@@ -25,6 +25,8 @@ The `hei_connect` folder contains the C++ addon to communicate with Hei Connect.
 
 The entry point of the C++ addon is the `Init()` in `./src/hei_connect.cc` file. It calls the `Method()` function. This function contains a static variable of type `HeiConnectDevice`. All communication with the Hei Connect device occur via this variable. `Method()` function checks the parameters come from Node environment (get-speed/set-speed) and calls appropriate C++ implementation (HeiConnectDevice::GetStirrerSpeed/HeiConnectDevice::SetStirrerSpeed).
 
+The C++ addon is built with `node-gyp`.
+
 ## Sample run
     PS E:\Documents\Programs\labforward> node . hc --help
      hc [<get-speed> <set-speed>]
@@ -56,4 +58,6 @@ A notable problem with current implementation is that each time `node .` is invo
 Here I list everything I could do better with more time:
 
     1. Running the app indefinitely and be able to take input from command line and process it
-    2. 
+    2. Having an abstract class as a base class of HeiConnectInterface. Function prototypes of some common functionalities could be defined in the abstract class (e.g., `GetApi()`).
+    3. Writing unit test for HeiConnectInterface class.
+    4. Writing unit test for HeiConnectDevice class.
