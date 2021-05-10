@@ -1,0 +1,16 @@
+{
+  "name": "assignment-may21",
+  "version": "1.0.0",
+  "description": "Assignment on Node-API & C++ addon",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adnan Rahman Chowdhury",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "hei_connect": "file:hei_connect",
+    "yargs": "^17.0.1"
+  }
+}
