@@ -4,7 +4,7 @@ I've decades of exerience in C & C++, have 10 months worth of experience in Node
 
 I've spent 5-6 hours for going through tutorial and ~5 hours for coding. The assignment is done on Windows 10 in Node.js v16.1.0.
 
-## Assignment basics
+## Assignment details
 The root folder contains `main.js` file which contains the entry point of the program. It can be executed by the following command:
 
     node .
