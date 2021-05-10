@@ -58,6 +58,9 @@ A notable problem with current implementation is that each time `node .` is invo
 Here I list everything I could do better with more time:
 
 1. Running the app indefinitely and be able to take input from command line and process it.
-2. Having an abstract class as a base class of HeiConnectInterface. Function prototypes of some common functionalities could be defined in the abstract class (e.g., `GetApi()`).
-3. Writing unit test for HeiConnectInterface class.
-4. Writing unit test for HeiConnectDevice class.
+2. Asynchronous communication with the devices.
+3. Have a command to query all connected devices to get which are online.
+4. Having an abstract class as a base class of `HeiConnectInterface`. Function prototypes of some common functionalities could be defined in the abstract class (e.g., `GetApi()`).
+5. Having an abstract class as a base class of `HeiConnectDevice`. There could be prototypes of common functionalities, like there could be a `Setup()` function to setup the communication with the device (e.g., opening port, setting baud rate etc.).
+6. Writing unit test for HeiConnectInterface class.
+7. Writing unit test for HeiConnectDevice class.
