@@ -52,6 +52,16 @@ The C++ addon is built with `node-gyp`.
     0
     Success
 
+## Build instruction
+Assuming `Node v16.x` and `npm` are installed, following commands can be executed in powershell from the root folder of the project to build the project:
+
+    npm install
+    cd .\hei_connect\
+    npm install
+    node-gyp build
+    cd..
+    npm install .\hei_connect\
+
 ## Rooms of improvement
 A notable problem with current implementation is that each time `node .` is invoked it starts the process and when the command execution is completed, it exits. I couldn't manage time to run it indefinitely. For this reason the RPM set is lost. Each time the process starts, the default RPM is loaded into memory which is 0.
 
